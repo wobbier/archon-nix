@@ -5,12 +5,12 @@
 }:
 
 let
-  version = "9.0.25";
+  version = "9.0.34";
   pname = "archon";
 
   src = fetchurl {
     url = "https://github.com/RPGLogs/Uploaders-archon/releases/download/v${version}/archon-v${version}.AppImage";
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    hash = "sha256-7t/gibR1UBxMSgA8qkNVhoOc52YWRsCQyzBRriGuzzI=";
   };
 
   appimageContents = appimageTools.extractType1 { inherit pname version src; };
