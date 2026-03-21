@@ -29,7 +29,7 @@ appimageTools.wrapType1 {
     EOF
 
     install -Dm444 \
-      "${appimageContents}/usr/share/icons/hicolor/512x512/apps/Archon.png" \
+      "${appimageContents}/Archon App.png" \
       "$out/share/icons/hicolor/512x512/apps/${pname}.png"
   '';
 
