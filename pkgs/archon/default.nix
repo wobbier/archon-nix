@@ -26,10 +26,11 @@ appimageTools.wrapType1 {
     Icon=${pname}
     Type=Application
     Categories=Game;Utility;
+    StartupWMClass=Archon App
     EOF
 
     install -Dm444 \
-      "${appimageContents}/Archon App.png" \
+      "${appimageContents}/${pname}.png" \
       "$out/share/icons/hicolor/512x512/apps/${pname}.png"
   '';
 
